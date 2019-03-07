@@ -1,7 +1,7 @@
 // window.onload = function() {
 //     const body = document.body;
 
-     const objectsDiv = document.getElementById("objects")
+     const objectsDiv = document.querySelector(".elements")
 
 
     const milk = document.getElementById("milk")
@@ -22,8 +22,8 @@
     
 // console.log(objects)
     function moveObjects(objects){
-        objects.style.left = (Math.random() * 4000) + "px"
-        objects.style.top = (Math.random() * 2000) + "px"
+        objects.style.left = (Math.random() * 1100) + "px"
+        objects.style.top = (Math.random() * 550) + "px"
         console.log(`topstyle for ${objects.id}` ,objects.style.top)
        }
     //  moveObjects(objects);
