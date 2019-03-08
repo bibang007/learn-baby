@@ -30,7 +30,7 @@
     const firetruck = document.getElementById("firetruck")
     const hat = document.getElementById("hat")
     const phone = document.getElementById("phone")
-    const sneaker = document.getElementById("shoes")
+    const shoes = document.getElementById("shoes")
     const pacifier = document.getElementById("pacifier")
     const guitar = document.getElementById("guitar")
     const drums = document.getElementById("drums")
@@ -39,7 +39,7 @@
     function moveObjects(objects){
         objects.style.left = (Math.random() * 1100) + "px"
         objects.style.top = (Math.random() * 550) + "px"
-        console.log(`topstyle for ${objects.id}` ,objects.style.top)
+        // console.log(`topstyle for ${objects.id}` ,objects.style.top)
        }
 
 moveObjects(guitar)
@@ -107,107 +107,125 @@ setInterval(function(){
                 moveObjects(apple)}, 3000 ) 
    
    
-    // const honk = document.getElementById("testcar1")
-    // const chapeau = document.getElementById("hattest")
-    // const chat = document.getElementById("cattest")
-    // const pompier = document.getElementById("firetrucktest")
+   
 
     car.addEventListener("click", function(){
         honk.play()
         setTimeout( () => {
-
+            checkCount() 
         car.remove() }, 2000)
+       
     })
     milk.addEventListener("click", function(){
         sayMilk.play()
         setTimeout( () => {
-
+            checkCount() 
         milk.remove() }, 2000)
     })
 
     apple.addEventListener("click", function(){
         sayApple.play()
         setTimeout( () => {
-
+            checkCount() 
         apple.remove() }, 2000)
     })
 
     ball.addEventListener("click", function(){
         sayBall.play()
         setTimeout( () => {
-
+            checkCount() 
         ball.remove() }, 2000)
     })
 
     banana.addEventListener("click", function(){
         sayBanana.play()
         setTimeout( () => {
-
+            checkCount() 
         banana.remove() }, 2000)
     })
 
     cat.addEventListener("click", function(){
         sayCat.play()
         setTimeout( () => {
-
+            checkCount() 
         cat.remove() }, 2000)
     })
 
     computer.addEventListener("click", function(){
         sayComputer.play()
         setTimeout( () => {
-
+            checkCount() 
         computer.remove() }, 2000)
     })
 
     dog.addEventListener("click", function(){
         sayDog.play()
         setTimeout( () => {
-
+            checkCount() 
         dog.remove() }, 2000)
     })
     firetruck.addEventListener("click", function(){
         sayTruck.play()
         setTimeout( () => {
-
+            checkCount() 
         firetruck.remove() }, 2000)
     })
     hat.addEventListener("click", function(){
         sayHat.play()
         setTimeout( () => {
-
+            checkCount() 
         hat.remove() }, 2000)
     })
     phone.addEventListener("click", function(){
         sayPhone.play()
         setTimeout( () => {
-
+        checkCount() 
         phone.remove() }, 2000)
     })
-    sneaker.addEventListener("click", function(){
+    shoes.addEventListener("click", function(){
         sayShoes.play()
         setTimeout( () => {
-
-        sneaker.remove() }, 2000)
+        checkCount() 
+        shoes.remove() }, 2000)
     })
     pacifier.addEventListener("click", function(){
         sayPacifier.play()
         setTimeout( () => {
-
+      checkCount() 
         pacifier.remove() }, 2000)
     })
     guitar.addEventListener("click", function(){
         sayGuitar.play()
         setTimeout( () => {
-
+       checkCount() 
         guitar.remove() }, 2000)
     })
     drums.addEventListener("click", function(){
         sayDrums.play()
         setTimeout( () => {
 
-        drums.remove() }, 2000)
-    })
+        drums.remove()
+        checkCount()  
+    }, 2000)
+        })
+
+
+    let elements = document.querySelector('.elements')
+    let count = elements.childElementCount
+
+    const replay = function(){
+        if (count === 0)
+        
+        location.reload()
+    }
+    
+
+    const checkCount = function() {
+        count -= 1
+        replay()
+    }
+
+
    
 
 
@@ -226,7 +244,7 @@ setInterval(function(){
 
 
 
-console.log(objectsDiv.children.length)
+// console.log(objectsDiv.children.length)
 
 
 

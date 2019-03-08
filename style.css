@@ -13,6 +13,7 @@
 
 p {
     text-align: center;
+    background: white;
 }
 
 /* .elements {
@@ -55,7 +56,7 @@ top: 0; */
 
 #back {
     z-index: -1 ;
-    height: 120%;
+    height: 100vh;
     width: 103%;
     
 
