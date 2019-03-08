@@ -4,6 +4,20 @@
      const objectsDiv = document.querySelector(".elements")
 
     const carHonk = document.getElementById('honk')
+    const sayMilk = document.getElementById('sonlait')
+    const sayTruck = document.getElementById('sonfiretruck')
+    const sayApple = document.getElementById('sonpomme')
+    const sayDrums = document.getElementById('sondrums')
+    const sayGuitar = document.getElementById('songuitar')
+    const sayComputer = document.getElementById('sonordi')
+    const sayDog = document.getElementById('sonchien')
+    const sayCat = document.getElementById('sonchat')
+    const sayHat = document.getElementById('chapeau')
+    const sayPacifier = document.getElementById('tetine')
+    const sayBanana = document.getElementById('sonbanane')
+    const sayShoes = document.getElementById('chaussure')
+    const sayPhone = document.getElementById('sonportable')
+    const sayBall = document.getElementById('sonballon')
 
     const milk = document.getElementById("milk")
     const apple = document.getElementById("apple")
@@ -104,7 +118,141 @@ setInterval(function(){
 
         car.remove() }, 2000)
     })
+    milk.addEventListener("click", function(){
+        sayMilk.play()
+        setTimeout( () => {
+
+        milk.remove() }, 2000)
+    })
+
+    apple.addEventListener("click", function(){
+        sayApple.play()
+        setTimeout( () => {
+
+        apple.remove() }, 2000)
+    })
+
+    ball.addEventListener("click", function(){
+        sayBall.play()
+        setTimeout( () => {
+
+        ball.remove() }, 2000)
+    })
+
+    banana.addEventListener("click", function(){
+        sayBanana.play()
+        setTimeout( () => {
+
+        banana.remove() }, 2000)
+    })
+
+    cat.addEventListener("click", function(){
+        sayCat.play()
+        setTimeout( () => {
+
+        cat.remove() }, 2000)
+    })
+
+    computer.addEventListener("click", function(){
+        sayComputer.play()
+        setTimeout( () => {
+
+        computer.remove() }, 2000)
+    })
+
+    dog.addEventListener("click", function(){
+        sayDog.play()
+        setTimeout( () => {
+
+        dog.remove() }, 2000)
+    })
+    firetruck.addEventListener("click", function(){
+        sayTruck.play()
+        setTimeout( () => {
+
+        firetruck.remove() }, 2000)
+    })
+    hat.addEventListener("click", function(){
+        sayHat.play()
+        setTimeout( () => {
+
+        hat.remove() }, 2000)
+    })
+    phone.addEventListener("click", function(){
+        sayPhone.play()
+        setTimeout( () => {
+
+        phone.remove() }, 2000)
+    })
+    sneaker.addEventListener("click", function(){
+        sayShoes.play()
+        setTimeout( () => {
+
+        sneaker.remove() }, 2000)
+    })
+    pacifier.addEventListener("click", function(){
+        sayPacifier.play()
+        setTimeout( () => {
+
+        pacifier.remove() }, 2000)
+    })
+    guitar.addEventListener("click", function(){
+        sayGuitar.play()
+        setTimeout( () => {
+
+        guitar.remove() }, 2000)
+    })
+    drums.addEventListener("click", function(){
+        sayDrums.play()
+        setTimeout( () => {
+
+        drums.remove() }, 2000)
+    })
+   
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 console.log(objectsDiv.children.length)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     // hat.addEventListener("click", function(){
     //         chapeau.play()   
 // }
