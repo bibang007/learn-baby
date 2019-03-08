@@ -44,14 +44,14 @@ top: 0; */
         cursor: pointer;
         transition: all 2s ease 0s;
         top: 0;
+       
     }
 
-
-
-
-#firemen:hover{
-    transform: scale(1.3);
+    .elements > div:hover{
+    transform: scale(2.5);
 }
+
+
 
 #back {
     z-index: -1 ;

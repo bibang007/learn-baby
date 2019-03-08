@@ -3,6 +3,7 @@
 
      const objectsDiv = document.querySelector(".elements")
 
+    const carHonk = document.getElementById('honk')
 
     const milk = document.getElementById("milk")
     const apple = document.getElementById("apple")
@@ -26,7 +27,6 @@
         objects.style.top = (Math.random() * 550) + "px"
         console.log(`topstyle for ${objects.id}` ,objects.style.top)
        }
-    //  moveObjects(objects);
 
 moveObjects(guitar)
 moveObjects(milk)
@@ -46,6 +46,9 @@ moveObjects(ball)
 
 setInterval(function(){
 moveObjects(dog)}, 3000 )
+
+setInterval(function(){
+moveObjects(banana)}, 3000 )
 
 setInterval(function(){
 moveObjects(pacifier)}, 3000 ) 
@@ -90,7 +93,20 @@ setInterval(function(){
                 moveObjects(apple)}, 3000 ) 
    
    
+    // const honk = document.getElementById("testcar1")
+    // const chapeau = document.getElementById("hattest")
+    // const chat = document.getElementById("cattest")
+    // const pompier = document.getElementById("firetrucktest")
 
+    car.addEventListener("click", function(){
+        honk.play()
+        setTimeout( () => {
+
+        car.remove() }, 2000)
+    })
+console.log(objectsDiv.children.length)
+    // hat.addEventListener("click", function(){
+    //         chapeau.play()   
 // }
 
 //divs have to move randomly on the page with the p
